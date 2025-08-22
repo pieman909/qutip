@@ -59,3 +59,33 @@ echo "python3 tutorials/scripts/ex_01_simple_qobj.py"
 echo "Example script command printed."
 
 echo "--- Script finished successfully ---"
+
+# Summary of Installed Packages
+# 
+# System-level Packages (installed with `sudo xbps-install -S`)
+# 
+# These packages provide core system functionalities, development headers, and graphical libraries that your Python environment relies on.
+# 
+# * python3-pip: The package installer for Python 3. (Though often pre-installed or required early on.)
+# 
+# * python3-devel: Provides the Python C header files (`Python.h`) essential for compiling Python extensions written in C or Cython, which QuTiP uses.
+# 
+# * tk-devel: Supplies the underlying Tcl/Tk graphical libraries that the Python `tkinter` module interfaces with.
+# 
+# * python3-tkinter: Provides the actual `tkinter` module for Python 3, enabling `matplotlib` to create interactive GUI windows for plots.
+# 
+# Python Packages (installed with `pip install -r requirements.txt` within your virtual environment)
+# 
+# These packages are specific to your QuTiP project and are isolated within your virtual environment, ensuring no conflicts with other Python projects or your system's global Python installation.
+# 
+# * cython: A dependency for QuTiP, used for compiling Python code to C for performance.
+# 
+# * numpy: A fundamental package for numerical computing in Python, a core dependency for scientific libraries.
+# 
+# * scipy: A library for scientific and technical computing, another key dependency for QuTiP.
+# 
+# * packaging: A utility for parsing and working with Python package versions.
+# 
+# * setuptools: Essential for building and installing Python packages, especially those with `setup.py` scripts like QuTiP. (You explicitly added this to `requirements.txt`).
+# 
+# * matplotlib: The primary plotting library in Python, necessary for QuTiP's visualization features. (You explicitly added this to `requirements.txt`).
